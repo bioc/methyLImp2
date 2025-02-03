@@ -284,9 +284,9 @@ methyLImp2 <- function(input, which_assay = NULL,
         if (sum(vapply(res, function(x) is.character(x), logical(1))) > 0) {
             problem_chr <- names(data_chr)[vapply(res, function(x) is.character(x), 
                                                   logical(1))]
-            for (i in 1:length(problem_chr)) {
+            for (prb in 1:length(problem_chr)) {
                 message("Sample group " , curr_group, ", ", 
-                        problem_chr[i], ": ", res[problem_chr[i]])
+                        problem_chr[prb], ": ", res[problem_chr[prb]])
             }
         }
         
