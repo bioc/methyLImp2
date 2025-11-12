@@ -12,6 +12,7 @@
 #' @return A numerical vector of beta values
 #'
 #' @keywords internal
+#' @noRd
 
 extract_values <- function(beta, na_positions) {
     

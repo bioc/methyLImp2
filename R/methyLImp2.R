@@ -17,6 +17,8 @@
 #'
 #' @return A list of numeric data matrices where each matrix contains probes 
 #' from one chromosome.
+#' @keywords internal
+#' @noRd
 
 split_by_chromosomes <- function(data,
                        type = c("450K", "EPIC", "user"),
@@ -347,6 +349,7 @@ methyLImp2 <- function(input, which_assay = NULL,
 #' @return A numeric matrix \eqn{out} with imputed data is returned.
 #' 
 #' @keywords internal
+#' @noRd
 
 methyLImp2_internal <- function(dat,
                                 min, max,

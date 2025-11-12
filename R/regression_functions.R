@@ -7,6 +7,7 @@
 #' @return A numeric matrix 
 #'
 #' @keywords internal
+#' @noRd
 
 plogit <- function(X, min = 0, max = 1)
 {
@@ -28,9 +29,9 @@ plogit <- function(X, min = 0, max = 1)
 #' @return A numeric matrix 
 #' 
 #' @keywords internal
+#' @noRd
 
-inv.plogit <- function(X, min = 0, max = 1)
-{
+inv.plogit <- function(X, min = 0, max = 1) {
     p <- exp(X) / (1 + exp(X))
     # fix problems with +Inf
     p <- ifelse(is.na(p) & !is.na(X), 1, p )
@@ -54,9 +55,9 @@ inv.plogit <- function(X, min = 0, max = 1)
 #' @return A numeric matrix 
 #'
 #' @keywords internal
+#' @noRd
 
-pinvr <- function(X, max.sv = min(dim(X)), tol = sqrt(.Machine$double.eps))
-{
+pinvr <- function(X, max.sv = min(dim(X)), tol = sqrt(.Machine$double.eps)) {
     # based on suggestions of R. M. Heiberger, T. M. Hesterberg and WNV
   
     if(length(dim(X)) > 2L || !(is.numeric(X) || is.complex(X)))

@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+.Rbuildignore
+data/.DS_Store
+methyLImp2.Rproj
+vignettes/methyLImp2_vignette.html
