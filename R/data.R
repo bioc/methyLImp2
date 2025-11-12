@@ -35,6 +35,7 @@
 #' @return A data.frame.
 #'
 #' @keywords datasets
+#' @noRd
 #'
 #' @source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi
 "beta_meta"
